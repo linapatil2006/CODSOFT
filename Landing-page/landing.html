@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing-Page</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+       
+        *{
+            margin:0px;
+            padding:0px;
+            font-family: "poppins", sans-serif;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            /* scroll-behavior: smooth; */
+        }
+        nav{
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100%;
+            padding:15px 100px;
+            background: #fff;
+            box-shadow: 0 1px 4px rgba(146,161,176,0.15);
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1000;
+            transition:0.5s;
+        }
+        .logo{
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            color:var(--second-color);
+            font-weight: 700;
+        }
+        ul{
+            display: flex;
+        }
+        ul li a{
+            padding:10px 22px;
+            color:var(--second-color);
+            border-radius: 2px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .buton {
+            width: 14%;
+            height: 50px;
+            background-color: #54545400;
+            color: white;
+            border: 3px solid #4e4545;
+            font-size: 15px;
+        }
+        h1 a {
+            color: rgb(237, 19, 19);
+            text-decoration: none;
+        }
+        .copyright{
+            padding: 20px;
+            background: var(--main-color);
+            color:#fff;
+            text-align: center;
+            color: var(--second-color);
+        }
+
+    
+    </style>
+</head>
+
+<body style="width: 98%;">
+
+     <!-- Navbar -->
+
+ <nav>
+    <a href="#" class="logo">Lina Patil</a>
+    <div class="toggle" onclick="toggleMenu()"></div>
+
+    <!-- menu  -->
+    <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about"  onclick="toggleMenu()">About</a></li>
+        <li><a href="#service"  onclick="toggleMenu()">Service</a></li>
+        <li><a href="#work"  onclick="toggleMenu()">Work</a></li>
+        <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+    </ul>
+ </nav>
+
+    <div class="container"
+        style="color: white; text-align: center; margin: -21px; background-image: url(image.jpg); background-attachment: fixed; height: 600px;   border: 2px solid rgb(45, 5, 5);">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 style="color: #cc005f;">Hello and Welcome</h1><br>
+        <h1 style="font-size: 50px;">We Are Greatfull To Have You</h1><br>
+        <h3 style="font-size: 20px;     color: #aea9a9;">| &nbsp;&nbsp;&nbsp;&nbsp; FRONT-END DEVELOPER
+            &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; UI/UX DESIGNER &nbsp;&nbsp;&nbsp;&nbsp;| </h3>
+        <br><br>
+
+        <div class="but">
+            <input class="buton" type="button" value="MORE &nbsp; ABOUT &nbsp; ME">
+        </div>
+        <br><br><br><br>
+        <h1>
+            <a href="">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">
+                <ion-icon name="beer-outline"></ion-icon>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">
+                <ion-icon name="color-palette-outline"></ion-icon>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </h1>
+    </div>
+
+    <!-- footer -->
+     <br>
+    <div class="copyright">
+        <p><span>Thank You</span> .This is LINA PATIL ,9078657894 :-</p>
+    </div>    
+
+</body>
+
+</html>
